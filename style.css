@@ -93,7 +93,8 @@ a {
     width: 50%;
     height: 50%;
   }
-  .Food > .card > img {
+  .Food > .card > img,
+  .Kolaci > .card > img {
     width: 150px;
     height: 150px;
   }
