@@ -1,0 +1,94 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(0, 31, 122);
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+nav,
+footer {
+  background-color: rgb(241, 241, 241);
+  width: 100%;
+  text-align: center;
+}
+/*nav bar made to stay on top always*/
+nav {
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.424);
+  text-align: center;
+}
+footer {
+  box-shadow: 0px -5px 6px rgba(0, 0, 0, 0.424);
+  height: 10vh;
+  margin: 20px 0px 0px 0px;
+  padding-top: 15px;
+}
+main {
+  width: 100%;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+/*card for holding pictures and text*/
+.card {
+  background-color: rgb(241, 241, 241);
+}
+h1,
+h4 {
+  color: darkgoldenrod;
+  text-shadow: 1px 2px 2px rgb(121, 90, 10);
+}
+a {
+  text-decoration: none;
+}
+/*all devices up till here*/
+
+/*css style for mobile screen up to 600px*/
+@media screen and (max-width: 600px) {
+  .card {
+    width: 45%;
+    height: 45%;
+    text-align: center;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 30px;
+    box-shadow: 1px 3px 6px black;
+  }
+  /*targeted img elements inside section TopliNapitci, below is the same for Hladni and Food*/
+  .TopliNapitci > .card > img {
+    height: 150px;
+    width: 150px;
+  }
+  .HladniNapitci > .card > img {
+    width: 50px;
+    height: 140px;
+  }
+  /* targeted card width and height for section HladniNapitci*/
+  .HladniNapitci > .card {
+    width: 29%;
+    height: 230px;
+  }
+  .Food > .card > img {
+    width: 150px;
+    height: 150px;
+  }
+  .naslovZaSekcije {
+    text-align: center;
+    color: rgb(219, 160, 12);
+    padding: 15px 0px 15px 0px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 2px rgb(30, 30, 30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
